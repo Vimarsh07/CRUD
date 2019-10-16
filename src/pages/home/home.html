@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngFor="let item of items">
+    {{item.name}} {{item.id}}
+  </div>
+  <ion-input type="text" [(ngModel)]="name"></ion-input>
+  
+  <button ion-button icon-only (click)="add()">ADD  </button>
+
+  <ion-input type="text" [(ngModel)]="roll"></ion-input>
+    <button ion-button icon-only (click)="delete()">DELETE
+    </button>
+
+    <ion-input type="text" [(ngModel)]="id"></ion-input>
+    <ion-input type="text" [(ngModel)]="nam"></ion-input>
+    <button ion-button icon-only (click)="update()">UPDATE
+    </button>
+
+
+
+
+</ion-content>
